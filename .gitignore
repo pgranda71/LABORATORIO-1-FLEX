@@ -6,3 +6,4 @@ TRES/tres
 CUATRO/cuatro
 CUATRO/cuatro_modificado
 *.o
+*lex.yy.c
