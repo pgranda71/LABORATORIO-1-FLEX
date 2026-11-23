@@ -1,0 +1,6 @@
+TOKEN_EMAIL: juan.perez@espe.edu.ec
+TOKEN_EMAIL: maria_lopez99@gmail.com
+TOKEN_EMAIL: pedro-ruiz@mail.co
+TOKEN_EMAIL: soporte@empresa.com
+
+Total de correos validos: 4

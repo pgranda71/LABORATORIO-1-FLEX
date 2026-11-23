@@ -1,0 +1,61 @@
+  IDENTIFICADOR: a
+  COMA
+  IDENTIFICADOR: b
+  COMA
+  ENTERO: 42
+  COMA
+  IDENTIFICADOR: x1
+  => Linea 1: LISTA VALIDA (4 elementos)
+
+  ENTERO: 10
+  COMA
+  ENTERO: 20
+  COMA
+  ENTERO: 30
+  => Linea 2: LISTA VALIDA (3 elementos)
+
+  IDENTIFICADOR: valor
+  COMA
+  ENTERO: 7
+  COMA
+  IDENTIFICADOR: _tmp
+  COMA
+  ENTERO: 100
+  => Linea 3: LISTA VALIDA (4 elementos)
+
+  IDENTIFICADOR: a
+  COMA
+  IDENTIFICADOR: b
+  COMA
+  ERROR: la lista termina en coma
+  => Linea 4: LISTA INVALIDA (1 errores)
+
+  ERROR: coma sin elemento previo
+  IDENTIFICADOR: a
+  => Linea 5: LISTA INVALIDA (1 errores)
+
+  IDENTIFICADOR: a
+  ERROR: falta una coma antes de 'b'
+  => Linea 6: LISTA INVALIDA (1 errores)
+
+  IDENTIFICADOR: x
+  COMA
+  ENTERO: 3
+  ERROR: token no valido '.'
+  ERROR: falta una coma antes de '5'
+  COMA
+  IDENTIFICADOR: y
+  => Linea 7: LISTA INVALIDA (2 errores)
+
+  ERROR: token invalido '12abc' (ni identificador ni entero)
+  COMA
+  IDENTIFICADOR: z
+  => Linea 8: LISTA INVALIDA (1 errores)
+
+  IDENTIFICADOR: a
+  COMA
+  ERROR: token no valido '@'
+  ERROR: coma sin elemento previo
+  IDENTIFICADOR: b
+  => Linea 9: LISTA INVALIDA (2 errores)
+
