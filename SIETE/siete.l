@@ -1,27 +1,34 @@
 %{
+/* 7.l - Reconoce numeros binarios (secuencias de 0 y 1) y muestra su valor decimal */
 #include <stdio.h>
 %}
 
 %option noyywrap
 
 %%
-"<="        { printf("OPERADOR RELACIONAL (menor o igual que): %s\n", yytext); }
-">="        { printf("OPERADOR RELACIONAL (mayor o igual que): %s\n", yytext); }
-"=="        { printf("OPERADOR RELACIONAL (igualdad):        %s\n", yytext); }
-"!="        { printf("OPERADOR RELACIONAL (desigualdad):     %s\n", yytext); }
-"<"         { printf("OPERADOR RELACIONAL (menor que):         %s\n", yytext); }
-">"         { printf("OPERADOR RELACIONAL (mayor que):         %s\n", yytext); }
 
-"+"         { printf("OPERADOR ARITMETICO (suma):            %s\n", yytext); }
-"-"         { printf("OPERADOR ARITMETICO (resta):           %s\n", yytext); }
-"*"         { printf("OPERADOR ARITMETICO (multiplicacion):  %s\n", yytext); }
-"/"         { printf("OPERADOR ARITMETICO (division):        %s\n", yytext); }
+[01]+           {
+                    if (yyleng > 63) {
+                        printf("BINARIO: %s -> demasiado largo (maximo 63 digitos)\n", yytext);
+                    } else {
+                        unsigned long long valor = 0;
+                        int i;
+                        for (i = 0; i < yyleng; i++)
+                            valor = valor * 2 + (yytext[i] - '0');
+                        printf("BINARIO: %s -> DECIMAL: %llu\n", yytext, valor);
+                    }
+                }
 
-[ \t\r\n]+  { /* ignorar espacios en blanco y saltos de linea */ }
-.           { /* ignorar otros caracteres */ }
+[0-9A-Za-z_]+   { printf("ERROR: %s no es binario (solo se permiten 0 y 1)\n", yytext); }
+
+[ \t\r\n]+      { /* se ignoran espacios y saltos de linea */ }
+
+.               { printf("ERROR: caracter no valido '%s'\n", yytext); }
+
 %%
 
 int main(void) {
     yylex();
     return 0;
 }
+

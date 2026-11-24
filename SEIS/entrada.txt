@@ -1,0 +1,5 @@
+Contactos de la clase de compiladores:
+juan.perez@espe.edu.ec
+maria_lopez99@gmail.com, pedro-ruiz@mail.co
+Casos invalidos: juan@ , @dominio.com, sin_arroba.com
+Fin del mensaje: soporte@empresa.com.

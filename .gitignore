@@ -11,3 +11,4 @@ SIETE/siete
 OCHO/ocho
 NUEVE/nueve
 *.o
+*lex.yy.c

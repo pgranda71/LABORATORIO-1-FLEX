@@ -1,2 +1,8 @@
-hola mundo en flex 2026!
-variable_uno = 123;
+HEXADECIMAL: 0x1A3F -> DECIMAL: 6719
+HEXADECIMAL: 0xFF -> DECIMAL: 255
+HEXADECIMAL: 0x0 -> DECIMAL: 0
+HEXADECIMAL: 0Xff -> DECIMAL: 255
+HEXADECIMAL: 0xCAFE -> DECIMAL: 51966
+ERROR: 0x no es un hexadecimal valido (formato 0x...)
+ERROR: 0x1G no es un hexadecimal valido (formato 0x...)
+ERROR: 1A3F no es un hexadecimal valido (formato 0x...)
