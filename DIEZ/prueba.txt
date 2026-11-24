@@ -1,0 +1,8 @@
+int total = 0;
+while (total < 100) {
+    if (total == 50) {
+        total = total + 10;
+    } else {
+        total = total + 1;
+    }
+}

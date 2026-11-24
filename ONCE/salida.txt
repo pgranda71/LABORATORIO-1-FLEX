@@ -1,0 +1,10 @@
+BINARIO: 1010 -> DECIMAL: 10
+BINARIO: 1 -> DECIMAL: 1
+BINARIO: 0 -> DECIMAL: 0
+BINARIO: 11111111 -> DECIMAL: 255
+BINARIO: 100000000 -> DECIMAL: 256
+BINARIO: 0101 -> DECIMAL: 5
+BINARIO: 1100 -> DECIMAL: 12
+ERROR: 102 no es binario (solo se permiten 0 y 1)
+ERROR: 12 no es binario (solo se permiten 0 y 1)
+ERROR: abc no es binario (solo se permiten 0 y 1)
