@@ -1,0 +1,6 @@
+Escribe texto
+--- Resumen de clasificacion de caracteres ---
+Mayusculas: 16
+Minuscuculas: 38
+Digitos:    3
+Espacios:   14
